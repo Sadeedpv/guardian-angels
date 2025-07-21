@@ -748,6 +748,7 @@ Banner Style
 
 .main-banner .item-1 {
   background-image: url(../images/banner-01.jpg);
+  filter: brightness(60%);
 }
 
 .main-banner .item-2 {
@@ -758,30 +759,37 @@ Banner Style
   background-image: url(../images/banner-03.jpg);
 }
 
-.main-banner .item span.category {
-  background-color: #fff;
-  color: #1e1e1e;
-  font-size: 16px;
+.category {
+  background-color: #2e3b6c;
+  color: white;
+  font-size: 25px;
   font-weight: 500;
   text-transform: capitalize;
-  padding: 6px 15px;
+  padding: 8px 19px;
   display: inline-block;
   margin-bottom: 30px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: -6px 4px 5px 0px rgba(0,0,0,0.5);
+-webkit-box-shadow: -6px 4px 5px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: -6px 4px 5px 0px rgba(0,0,0,0.5);
+
+}
+.category:hover{
+  background-color: #2e3b6c;
 }
 
-.main-banner .item span.category em {
-  font-style: normal;
-  color: #2e3b6c;
-}
 
 .main-banner .item h2 {
-  font-size: 62px;
+  font-size: 74px;
   font-weight: 700;
   text-transform: uppercase;
   color: black !important;
   line-height: 72px;
   width: 50%;
-  margin-bottom: 0px;
+  margin-bottom: 25px;
+  text-shadow: 1px 3px 3px rgba(206,190,173,0.98);
+  word-wrap: break-word;
 }
 
 .main-banner .owl-dots {
