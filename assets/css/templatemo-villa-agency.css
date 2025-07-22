@@ -1020,14 +1020,13 @@ Fun Facts Style
   border-radius: 10px;
   width: 270px;
   padding: 20px 0px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.fun-facts .counter h2,
-.fun-facts .counter p {
-  display: inline-flex;
-  vertical-align: middle;
-}
+
 
 .fun-facts .counter p {
   text-align: left;
@@ -1038,9 +1037,11 @@ Fun Facts Style
 }
 
 .fun-facts .counter h2 {
+  text-align: center;
   margin-right: 25px;
-  font-size: 40px;
+  font-size: 25px;
   color: #2e3b6c;
+  margin-bottom: 10px;
 }
 
 .fun-facts .counter:after {
@@ -1060,7 +1061,23 @@ Fun Facts Style
 Best Deal Style
 --------------------------------------------- 
 */
-
+.image-div{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.image-box{
+  max-width:30%;
+  object-fit: cover;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
 .best-deal {
   background-color: #fafafa;
   padding: 100px 0px;
@@ -1159,61 +1176,6 @@ Properties Style
   border-radius: 10px;
   padding: 30px;
   margin-bottom: 30px;
-}
-
-.properties .item img {
-  border-radius: 10px;
-}
-
-.properties .item span.category {
-  background-color: #fbd9cf;
-  font-weight: 500;
-  border-radius: 5px;
-  font-size: 14px;
-  color: #1e1e1e;
-  padding: 5px 12px;
-  display: inline-block;
-  margin-top: 25px;
-}
-
-.properties .item h4 {
-  font-size: 19px;
-  margin: 25px 0px;
-}
-
-.properties .item h4 a {
-  color: #1e1e1e;
-}
-
-.properties .item ul li {
-  display: inline-block;
-  font-size: 15px;
-  color: #4a4a4a;
-  margin-right: 20px;
-}
-
-.properties .item ul li span {
-  font-weight: 600;
-  color: #1e1e1e;
-}
-
-.properties .item ul {
-  border-bottom: 1px solid #eaeaea;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-}
-
-.properties .item h6 {
-  font-size: 20px;
-  color: #2e3b6c;
-  margin-top: 6px;
-  display: inline-block;
-  float: right;
-  margin-top: 30px;
-}
-
-.properties .item .main-button {
-  text-align: center;
 }
 
 
@@ -1331,6 +1293,12 @@ Contact Style
 
 .contact-content #contact-form button:hover {
   background-color: #2e3b6c;
+}
+
+.map-box{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 
