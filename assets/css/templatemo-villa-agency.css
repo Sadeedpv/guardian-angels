@@ -486,7 +486,8 @@ Header Style
 }
 
 .header-area .main-nav .nav li:last-child:hover a {
-  background-color: #1e1e1e;
+  background-color: #2e3b6c;
+  color: #fff;
 }
 
 .header-area .main-nav .nav li:last-child:hover a i {
@@ -673,7 +674,7 @@ Header Style
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #ee626b!important;
+    color: #2e3b6c!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -746,18 +747,86 @@ Banner Style
   margin-top: 0px;
 }
 
-.main-banner .item-1 {
+/* .main-banner .item-1 {
   background-image: url(../images/banner-01.jpg);
   filter: brightness(60%);
+} */
+ .main-banner .item-1 {
+  position: relative;
+  background-image: url(../images/banner-01.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-.main-banner .item-2 {
+/* Dark overlay only */
+.main-banner .item-1::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* adjust for darkness */
+  z-index: 0;
+}
+
+/* Make sure your content is above the overlay */
+.main-banner .item-1 * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+/* .main-banner .item-2 {
   background-image: url(../images/banner-02.jpg);
+  filter: brightness(60%);
+} */
+.main-banner .item-2 {
+ position: relative;
+ background-image: url(../images/banner-02.jpg);
+ background-size: cover;
+ background-position: center;
 }
 
-.main-banner .item-3 {
-  background-image: url(../images/banner-03.jpg);
+/* Dark overlay only */
+.main-banner .item-2::before {
+ content: '';
+ position: absolute;
+ inset: 0;
+ background-color: rgba(0, 0, 0, 0.6); /* adjust for darkness */
+ z-index: 0;
 }
+
+/* Make sure your content is above the overlay */
+.main-banner .item-2 * {
+ position: relative;
+ z-index: 1;
+}
+
+/* .main-banner .item-3 {
+  background-image: url(../images/banner-03.jpg);
+  filter: brightness(60%);
+} */
+ .main-banner .item-3 {
+ position: relative;
+ background-image: url(../images/banner-03.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+/* Dark overlay only */
+.main-banner .item-3::before {
+ content: '';
+ position: absolute;
+ inset: 0;
+ background-color: rgba(0, 0, 0, 0.6); /* adjust for darkness */
+ z-index: 0;
+}
+
+/* Make sure your content is above the overlay */
+.main-banner .item-3 * {
+ position: relative;
+ z-index: 1;
+}
+
 
 .category {
   background-color: #2e3b6c;
@@ -776,7 +845,7 @@ Banner Style
 
 }
 .category:hover{
-  background-color: #2e3b6c;
+  background-color: #4a4a4a;
 }
 
 
@@ -784,11 +853,11 @@ Banner Style
   font-size: 74px;
   font-weight: 700;
   text-transform: uppercase;
-  color: black !important;
+  color: white !important;
   line-height: 72px;
   width: 50%;
   margin-bottom: 25px;
-  text-shadow: 1px 3px 3px rgba(206,190,173,0.98);
+  text-shadow: 1px 3px 3px rgba(43, 42, 42, 0.98);
   word-wrap: break-word;
 }
 
@@ -801,14 +870,14 @@ Banner Style
 .main-banner .owl-dots .owl-dot {
   width: 10px;
   height: 10px;
-  background-color: #fff;
+  background-color: black;
   border-radius: 50%;
   margin-right: 10px;
   transition: all .5s;
 }
 
 .main-banner .owl-dots .active {
-  background-color: #2e3b6c;
+  background-color: white;
 }
 
 .main-banner .owl-nav {
@@ -853,13 +922,13 @@ Featured Style
 }
 
 .featured .left-image img {
-  padding-left: 55px;
+  padding-left: 25px;
 }
 
 .featured .left-image a {
   display: inline-block;
-  width: 110px;
-  height: 110px;
+  width: 140px;
+  height: 140px;
   line-height: 110px;
   background-color: #2e3b6c;
   border-radius: 50%;
@@ -872,86 +941,17 @@ Featured Style
 .featured .section-heading {
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .featured .section-heading h2 {
-  width: 70%;
+  width: 90%;
 }
 
-.featured .accordion {
-  margin-left: 10px;
-  margin-right: 10px;
-  --bs-accordion-border-radius: 10px;
-  --bs-accordion-inner-border-radius: 10px;
-  --bs-accordion-bg: #fafafa;
-  --bs-accordion-border-color: none;
-  border: none !important;
-}
 
-.featured .accordion-header {
-  border-bottom: 1px solid #eaeaea;
-}
 
-.featured .accordion-button {
-  box-shadow: none;
-  font-size: 17px;
-  font-weight: 500;
-  color: #1e1e1e;
-}
 
-.featured .accordion-button:not(.collapsed) {
-  color: #2e3b6c;
-  background-color: #fafafa;
-  outline: none;
-}
 
-.featured .accordion-button::after {
-  display: none;
-}
-
-.featured #headingThree {
-  border-bottom: none;
-}
-
-.featured .accordion-item:last-of-type .accordion-collapse {
-  border-top: 1px solid #eaeaea;
-}
-
-.featured .info-table {
-  border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-  padding: 35px 30px;
-}
-
-.featured .info-table ul li {
-  display: block;
-  margin-bottom: 35px;
-  padding-bottom: 35px;
-  border-bottom: 1px solid #eee;
-}
-
-.featured .info-table ul li:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.featured .info-table ul li img {
-  float: left;
-  margin-right: 25px;
-}
-
-.featured .info-table ul li h4 {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.featured .info-table ul li h4 span {
-  font-size: 15px;
-  color: #aaa;
-  font-weight: 400;
-}
 
 /* 
 ---------------------------------------------
@@ -960,11 +960,11 @@ Video Style
 */
 
 .video {
-  background-image: url(../images/video-bg.jpg);
+  background-color: #2e3b6c;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 100px 0px 250px 0px;
+  padding: 50px 0px 0px 0px;
   position: relative;
 }
 
