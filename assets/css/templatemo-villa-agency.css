@@ -53,6 +53,9 @@ figure, header, nav, section, article, aside, footer, figcaption {
 .clearfix {
   display: inline-block;
 }
+html, *{
+  scroll-behavior: smooth !important;
+}
 
 html[xmlns] .clearfix {
   display: block;
@@ -1299,43 +1302,11 @@ Contact Style
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 
-/* 
----------------------------------------------
-Footer Style
---------------------------------------------- 
-*/
 
-footer.footer-no-gap {
-  margin-top: 0px;
-}
-
-footer {
-  margin-top: 150px;
-  background-color: #1e1e1e;
-  min-height: 100px;
-}
-
-footer p {
-  text-align: center;
-  line-height: 100px;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-footer p a {
-  color: #fff;
-  transition: all .3s;
-  position: relative;
-  z-index: 3;
-}
-
-footer p a:hover {
-  opacity: 0.75;
-}
 
 
 /* 
