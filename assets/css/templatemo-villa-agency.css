@@ -1086,13 +1086,15 @@ Best Deal Style
 }
 .image-box{
   width: 25em;
-  height: auto;
-  object-fit: contain;
-  background: transparent;
+  height: 25em;
+  object-fit: cover;
   border: none;
   box-shadow: none;
   margin: 0;
   padding: 0;
+  box-shadow: -3px 4px 12px -5px rgba(0,0,0,0.89);
+-webkit-box-shadow: -3px 4px 12px -5px rgba(0,0,0,0.89);
+-moz-box-shadow: -3px 4px 12px -5px rgba(0,0,0,0.89);
 }
 .best-deal {
   background-color: #fafafa;
