@@ -926,6 +926,12 @@ Banner Style
   right: 45px;
 }
 
+.banner-location{
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
 /* 
 ---------------------------------------------
 Featured Style
@@ -1113,6 +1119,9 @@ Contact Style
   padding: 35px 30px;
   background-color: #fff;
 }
+.contact-content .item:hover{
+  background-color: #efeded;
+}
 
 .contact-content .phone {
   margin-right: 15px;
@@ -1148,7 +1157,14 @@ Contact Style
 }
 
 
-
+/* Footer */
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 0;
+  font-size: 18px;
+}
 
 
 /* 
@@ -1321,4 +1337,24 @@ body {
   .contact-page .section-heading {
     margin-right: 100px;
   }
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  background-color: #2e3b6c;
+  color: white !important;
+  cursor: pointer;
+  padding: 16px 22px;
+  border-radius: 50%;
+  transition: opacity 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #555;
 }
