@@ -1047,9 +1047,9 @@ Best Deal Style
   justify-content: center;
 }
 .image-box{
-  width: 25em;
+  width: auto;
   height: 25em;
-  object-fit: cover;
+  object-fit: ccontain;
   border: none;
   box-shadow: none;
   margin: 0;
@@ -1057,6 +1057,16 @@ Best Deal Style
   box-shadow: -3px 4px 12px -5px rgba(0,0,0,0.89);
 -webkit-box-shadow: -3px 4px 12px -5px rgba(0,0,0,0.89);
 -moz-box-shadow: -3px 4px 12px -5px rgba(0,0,0,0.89);
+}
+.image-box-special{
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+
 }
 .best-deal {
   background-color: #fafafa;
@@ -1123,12 +1133,9 @@ Contact Style
   background-color: #efeded;
 }
 
-.contact-content .phone {
-  margin-right: 15px;
-}
 
-.contact-content .email {
-  margin-left: 15px;
+.contact-content .item{
+  margin: 15px;
 }
 
 .contact-content .item img {
